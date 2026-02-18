@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    input { width: 60px; padding: 0.5rem; text-align: center; }
+    select { padding: 0.5rem; margin: 0 0.5rem; }
+    button { padding: 0.5rem 1rem; cursor: pointer; }
+    #result { font-size: 1.2rem; margin-top: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>11. Калькулятор</h1>
+  <input type="number" id="a" value="10">
+  <select id="op">
+    <option value="+">+</option>
+    <option value="-">−</option>
+    <option value="*">×</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="b" value="5">
+  <button id="btn">=</button>
+  <div id="result"></div>
+  <script src="calculator.js"></script>
+</body>
+</html>

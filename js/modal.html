@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Модальное окно</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    .overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; }
+    .overlay.open { display: flex; }
+    .modal { background: white; padding: 2rem; border-radius: 8px; max-width: 400px; }
+    button { padding: 0.5rem 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>8. Модальное окно</h1>
+  <button id="open">Открыть окно</button>
+  <div id="overlay" class="overlay">
+    <div class="modal">
+      <p>Это модальное окно. Закрой его кнопкой или кликом по фону.</p>
+      <button id="close">Закрыть</button>
+    </div>
+  </div>
+  <script src="modal.js"></script>
+</body>
+</html>

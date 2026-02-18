@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Печать по буквам</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    #out { font-size: 1.2rem; min-height: 1.5em; }
+    #out::after { content: '|'; animation: blink 0.8s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    button { padding: 0.5rem 1rem; cursor: pointer; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>12. Печать текста по буквам</h1>
+  <div id="out"></div>
+  <button id="btn">Запустить снова</button>
+  <script src="typing.js"></script>
+</body>
+</html>
